@@ -1,21 +1,23 @@
 //
-//  ViewController.m
+//  aViewController.m
 //  VFL
 //
 //  Created by CaoFei on 15/2/14.
 //  Copyright (c) 2015年 CaoFei. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "aViewController.h"
 
-@interface ViewController ()
+@interface aViewController ()
 
 @end
 
-@implementation ViewController
+@implementation aViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    // Do any additional setup after loading the view.
+    [self.view setBackgroundColor:[UIColor greenColor]];
     UIButton *button=[[UIButton alloc]init];
     [button setTitle:@"点击一下" forState:UIControlStateNormal];
     button.translatesAutoresizingMaskIntoConstraints=NO;
@@ -26,12 +28,12 @@
                                                                      options:0
                                                                      metrics:nil
                                                                        views:NSDictionaryOfVariableBindings(button)];
-    NSArray * constraints2 = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-20-[button(==30)]"
+    NSArray * constraints2 = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-66-[button(==30)]"
                                                                      options:0
                                                                      metrics:nil
                                                                        views:NSDictionaryOfVariableBindings(button)];
     
-
+    
     
     [self.view addConstraints:constraints1];
     [self.view addConstraints:constraints2];
@@ -52,7 +54,7 @@
                                                                   metrics:nil
                                                                     views:NSDictionaryOfVariableBindings(button1,button)];
     
-   
+    
     NSArray *constraints5=[NSLayoutConstraint constraintsWithVisualFormat:@"V:[button]-[button1(==height)]"
                                                                   options:0
                                                                   metrics:@{@"height":@90}
@@ -60,12 +62,21 @@
     
     [self.view addConstraints:constraints3];
     [self.view addConstraints:constraints5];
-    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
 
 @end

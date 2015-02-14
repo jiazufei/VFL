@@ -14,6 +14,7 @@
 		E8876A3B1A8EE6CA0082F5F4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8876A3A1A8EE6CA0082F5F4 /* Images.xcassets */; };
 		E8876A3E1A8EE6CA0082F5F4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8876A3C1A8EE6CA0082F5F4 /* LaunchScreen.xib */; };
 		E8876A4A1A8EE6CA0082F5F4 /* VFLTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E8876A491A8EE6CA0082F5F4 /* VFLTests.m */; };
+		E8876A551A8EF9E70082F5F4 /* aViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E8876A541A8EF9E70082F5F4 /* aViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		E8876A431A8EE6CA0082F5F4 /* VFLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VFLTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8876A481A8EE6CA0082F5F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8876A491A8EE6CA0082F5F4 /* VFLTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VFLTests.m; sourceTree = "<group>"; };
+		E8876A531A8EF9E70082F5F4 /* aViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aViewController.h; sourceTree = "<group>"; };
+		E8876A541A8EF9E70082F5F4 /* aViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = aViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,8 @@
 			children = (
 				E8876A311A8EE6CA0082F5F4 /* AppDelegate.h */,
 				E8876A321A8EE6CA0082F5F4 /* AppDelegate.m */,
+				E8876A531A8EF9E70082F5F4 /* aViewController.h */,
+				E8876A541A8EF9E70082F5F4 /* aViewController.m */,
 				E8876A341A8EE6CA0082F5F4 /* ViewController.h */,
 				E8876A351A8EE6CA0082F5F4 /* ViewController.m */,
 				E8876A371A8EE6CA0082F5F4 /* Main.storyboard */,
@@ -219,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8876A551A8EF9E70082F5F4 /* aViewController.m in Sources */,
 				E8876A361A8EE6CA0082F5F4 /* ViewController.m in Sources */,
 				E8876A331A8EE6CA0082F5F4 /* AppDelegate.m in Sources */,
 				E8876A301A8EE6CA0082F5F4 /* main.m in Sources */,
@@ -344,6 +350,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = VFL/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -354,6 +361,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = VFL/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -412,6 +420,7 @@
 				E8876A4F1A8EE6CA0082F5F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E8876A501A8EE6CA0082F5F4 /* Build configuration list for PBXNativeTarget "VFLTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +429,7 @@
 				E8876A521A8EE6CA0082F5F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
